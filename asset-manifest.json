@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lights/static/css/main.40591ba5.css",
-    "main.js": "/lights/static/js/main.655a474f.js",
+    "main.js": "/lights/static/js/main.deda5068.js",
     "index.html": "/lights/index.html",
     "main.40591ba5.css.map": "/lights/static/css/main.40591ba5.css.map",
-    "main.655a474f.js.map": "/lights/static/js/main.655a474f.js.map"
+    "main.deda5068.js.map": "/lights/static/js/main.deda5068.js.map"
   },
   "entrypoints": [
     "static/css/main.40591ba5.css",
-    "static/js/main.655a474f.js"
+    "static/js/main.deda5068.js"
   ]
 }
