@@ -5,12 +5,7 @@
 }
 
 .display {
-  width: 100%;
-  min-height: 300px;
-  border-radius: 20px;
-  padding: 15px 15px;
-  margin-bottom: 30px;
-  box-shadow: #000 0px 0px 2px;
+  margin-bottom: 30px !important;
 }
 
 .container {
@@ -19,4 +14,17 @@
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.submitButton {
+  position: fixed !important;
+  top: 20px;
+  right: 20px;
+}
+
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=index.css.map */

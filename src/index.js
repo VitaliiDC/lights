@@ -1,17 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import App from './components/appContainer';
+import {BrowserRouter, Routes, Route, HashRouter} from 'react-router-dom';
 import './index.css';
+import {Provider} from 'react-redux';
+import store from './store';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
     <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<App />} >
-
-            </Route>
-        </Routes>
+        <HashRouter basename='/'>
+            <Provider store={store}>
+                <Routes>
+                    <Route path='/' element={<App />} ></Route>
+                </Routes>
+            </Provider>
+        </HashRouter>
     </BrowserRouter>
-    ,
-    document.getElementById('root')
 );
