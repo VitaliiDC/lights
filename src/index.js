@@ -10,12 +10,10 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
     <BrowserRouter>
-        <HashRouter basename='/'>
-            <Provider store={store}>
-                <Routes>
-                    <Route path='/' element={<App />} ></Route>
-                </Routes>
-            </Provider>
-        </HashRouter>
+        <Provider store={store}>
+            <Routes>
+                <Route path='/lights' element={<App />} ></Route>
+            </Routes>
+        </Provider>
     </BrowserRouter>
 );
