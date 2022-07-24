@@ -30,16 +30,20 @@ const App = props => {
                 }}
                 className={"submitButton"}
                 >Зберегти</Button>}
-            <TextField
-                multiline
-                rows={6}
-                className="display"
-                value={fieldValue}
-                onChange={((e) => {
-                    setFieldValue(e.target.value);
-                    setIsInputChanged(true);
-                })}
-            ></TextField>
+            <div className="display">
+                <TextField
+                    fullWidth
+                    name="display"
+                    multiline
+                    rows={6}
+                    value={fieldValue}
+                    onChange={((e) => {
+                        setFieldValue(e.target.value);
+                        setIsInputChanged(true);
+                    })}
+                ></TextField>
+                <span className="display__indicator">{currentSlide > 15 ? `B${currentSlide - 15}` : `A${currentSlide + 1}`}</span>
+            </div>
             <Grid 
                 container
                 direction="row" 
